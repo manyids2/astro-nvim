@@ -20,6 +20,11 @@ return {
         status.component.nav(),
         status.component.mode { surround = { separator = "right" } },
       },
+      statuscolumn = {
+        status.component.foldcolumn(),
+        status.component.fill(),
+        status.component.signcolumn(),
+      } or nil,
     }
   end,
   config = require "plugins.configs.heirline",

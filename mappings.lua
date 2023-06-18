@@ -15,6 +15,7 @@ return {
       desc = "Next buffer",
     },
     ["<M-e>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
+    ["<M-f>"] = { "<cmd>ZenMode<cr>", desc = "Zen mode" },
   },
   t = {
     -- setting a mapping to false will disable it
