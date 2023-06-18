@@ -32,4 +32,13 @@ return {
       -- "rcarriga/nvim-notify",
     },
   },
+  {
+    "linux-cultist/venv-selector.nvim",
+    opts = {
+      search = false,
+      search_workspace = false,
+      fd_binary_name = "fdfind",
+      name = ".venv",
+    },
+  },
 }
