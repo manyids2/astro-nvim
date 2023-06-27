@@ -16,9 +16,12 @@ return {
     },
     ["<M-e>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
     ["<M-f>"] = { "<cmd>ZenMode<cr>", desc = "Zen mode" },
+    ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
+    ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
+    ["<leader>c"] = false,
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    ["<esc>"] = false,
   },
 }
