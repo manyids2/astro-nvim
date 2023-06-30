@@ -14,6 +14,8 @@ return {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer",
     },
+
+    -- Alt commands
     ["<M-e>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
     ["<M-f>"] = { "<cmd>ZenMode<cr>", desc = "Zen mode" },
     ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
