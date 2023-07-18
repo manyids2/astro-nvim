@@ -18,6 +18,7 @@ return {
     -- Alt commands
     ["<M-e>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
     ["<M-f>"] = { "<cmd>ZenMode<cr>", desc = "Zen mode" },
+    ["<M-o>"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
     ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
     ["<leader>c"] = false,
