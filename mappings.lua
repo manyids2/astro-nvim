@@ -19,9 +19,18 @@ return {
     ["<M-e>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
     ["<M-f>"] = { "<cmd>ZenMode<cr>", desc = "Zen mode" },
     ["<M-o>"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
+    ["<M-g>"] = { "<cmd>ARsyncUpDelete<cr>", desc = "Rsync up" },
+    ["<M-G>"] = { "<cmd>ARsyncDown<cr>", desc = "Rsync down" },
     ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
     ["<leader>c"] = false,
+
+    -- which-key groups
+    ["<leader>x"] = { name = " Trouble" },
+    ["<leader>r"] = { name = " Neotest" },
+    ["<leader>G"] = { name = " Rsync" },
+    ["<leader>v"] = { name = " Virtualenv" },
+    ["<leader>D"] = { name = " Dadbod" },
   },
   t = {
     -- setting a mapping to false will disable it

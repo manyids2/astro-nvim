@@ -1,42 +1,46 @@
 return {
   "nvim-neotest/neotest",
+  ft = { "go", "rust", "python" },
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
     "antoinemadec/FixCursorHold.nvim",
     "nvim-neotest/neotest-python",
+    "nvim-neotest/neotest-go",
+    "nvim-neotest/neotest-python",
+    "rouge8/neotest-rust",
   },
   keys = {
     {
-      "<leader>tr",
+      "<leader>rr",
       function()
         require("neotest").run.run()
       end,
       desc = "Neotest run nearest",
     },
     {
-      "<leader>tf",
+      "<leader>rf",
       function()
         require("neotest").run.run(vim.fn.expand("%"))
       end,
       desc = "Neotest run this file",
     },
     {
-      "<leader>td",
+      "<leader>rd",
       function()
         require("neotest").run.run({ vim.fn.expand("%"), strategy = "dap" })
       end,
       desc = "Neotest run this file with dap",
     },
     {
-      "<leader>ts",
+      "<leader>rs",
       function()
         require("neotest").run.stop()
       end,
       desc = "Neotest stop",
     },
     {
-      "<leader>tt",
+      "<leader>rt",
       function()
         require("neotest").output.open({ enter = true })
       end,
@@ -55,4 +59,3 @@ return {
     })
   end,
 }
-

@@ -7,11 +7,11 @@ return {
     },
     cmd = { "DB", "DBUIToggle", "DBUIFindBuffer", "DBUIRenameBuffer", "DBUILastQueryInfo" },
     keys = {
-      { "<leader>DD", "<cmd>DB ", desc = "Dadbod" },
-      { "<leader>Du", "<cmd>DBUIToggle<cr>", desc = "Dadbod" },
-      { "<leader>Df", "<cmd>DBUIFindBuffer<cr>", desc = "Dadbod" },
-      { "<leader>Dr", "<cmd>DBUIRenameBuffer<cr>", desc = "Dadbod" },
-      { "<leader>Dq", "<cmd>DBUILastQueryInfo<cr>", desc = "Dadbod" },
+      { "<leader>DD", "<cmd>DB<cr>", desc = "DB" },
+      { "<leader>Du", "<cmd>DBUIToggle<cr>", desc = "DBUIToggle" },
+      { "<leader>Df", "<cmd>DBUIFindBuffer<cr>", desc = "DBUIFindBuffer" },
+      { "<leader>Dr", "<cmd>DBUIRenameBuffer<cr>", desc = "DBUIRenameBuffer" },
+      { "<leader>Dq", "<cmd>DBUILastQueryInfo<cr>", desc = "DBUILastQueryInfo" },
     },
     config = function()
       local function db_completion()
