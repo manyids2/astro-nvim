@@ -60,7 +60,7 @@ return {
     parents = 2,
 
     -- name (default: venv) - The name of the venv directories to look for.
-    name = ".venv", -- NOTE: You can also use a lua table here for multiple names: {"venv", ".venv"}`
+    name = ".venv",
 
     -- fd_binary_name (default: fd) - The name of the fd binary on your system.
     fd_binary_name = "fdfind",

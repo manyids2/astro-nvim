@@ -21,6 +21,7 @@ return {
     ["<M-o>"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
     ["<M-g>"] = { "<cmd>ARsyncUpDelete<cr>", desc = "Rsync up" },
     ["<M-G>"] = { "<cmd>ARsyncDown<cr>", desc = "Rsync down" },
+    ["<M-t>"] = { "<cmd>TodoTrouble<cr>", desc = "Todos" },
     ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
     ["<leader>c"] = false,
@@ -31,6 +32,8 @@ return {
     ["<leader>G"] = { name = " Rsync" },
     ["<leader>v"] = { name = " Virtualenv" },
     ["<leader>D"] = { name = " Dadbod" },
+
+    -- specific keys
   },
   t = {
     -- setting a mapping to false will disable it
