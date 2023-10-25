@@ -6,9 +6,10 @@ return {
 
   -- languages
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.svelte" },
@@ -20,7 +21,6 @@ return {
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   -- ide
-  { import = "astrocommunity.code-runner.sniprun" },
   { import = "astrocommunity.code-runner.overseer-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.neogen" },

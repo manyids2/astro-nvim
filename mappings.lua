@@ -22,6 +22,7 @@ return {
     ["<M-g>"] = { "<cmd>ARsyncUpDelete<cr>", desc = "Rsync up" },
     ["<M-G>"] = { "<cmd>ARsyncDown<cr>", desc = "Rsync down" },
     ["<M-t>"] = { "<cmd>TodoTrouble<cr>", desc = "Todos" },
+    ["<M-r>"] = { "<cmd>source .git/.nvim.lua<cr>", desc = "Load local nvim config" },
     ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
     ["<leader>c"] = false,
