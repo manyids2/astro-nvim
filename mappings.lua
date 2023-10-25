@@ -27,6 +27,12 @@ return {
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
     ["<leader>c"] = false,
 
+    -- Split management
+    ["<tab>"] = {"<cmd>wincmd w<cr>", desc= "Next window"},
+    ["<S-tab>"] = {"<cmd>wincmd W<cr>", desc= "Prev window"},
+    ["+"] = {"<cmd>set wh=999<cr><cmd>set wiw=999<cr>",  desc = "Maximize window" },
+    ["="] = {"<cmd>set wh=10<cr><cmd>set wiw=10<cr><cmd>wincmd =<cr>",  desc = "Equalize window" },
+
     -- which-key groups
     ["<leader>x"] = { name = " Trouble" },
     ["<leader>r"] = { name = " Neotest" },
