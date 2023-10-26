@@ -46,6 +46,7 @@ return {
           runner = "pytest",
         },
       },
+      log_level = 1,
     }
   end,
 }

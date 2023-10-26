@@ -22,16 +22,18 @@ return {
     ["<M-g>"] = { "<cmd>ARsyncUpDelete<cr>", desc = "Rsync up" },
     ["<M-G>"] = { "<cmd>ARsyncDown<cr>", desc = "Rsync down" },
     ["<M-t>"] = { "<cmd>TodoTrouble<cr>", desc = "Todos" },
+    ["<M-a>"] = { "<cmd>AerialToggle<cr>", desc = "Aerial sidebar" },
+    ["<M-n>"] = { "<cmd>AerialNavToggle<cr>", desc = "Aerial" },
     ["<M-r>"] = { "<cmd>source .git/.nvim.lua<cr>", desc = "Load local nvim config" },
     ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
     ["<leader>c"] = false,
 
     -- Split management
-    ["<tab>"] = {"<cmd>wincmd w<cr>", desc= "Next window"},
-    ["<S-tab>"] = {"<cmd>wincmd W<cr>", desc= "Prev window"},
-    ["+"] = {"<cmd>set wh=999<cr><cmd>set wiw=999<cr>",  desc = "Maximize window" },
-    ["="] = {"<cmd>set wh=10<cr><cmd>set wiw=10<cr><cmd>wincmd =<cr>",  desc = "Equalize window" },
+    ["<tab>"] = { "<cmd>wincmd w<cr>", desc = "Next window" },
+    ["<S-tab>"] = { "<cmd>wincmd W<cr>", desc = "Prev window" },
+    ["+"] = { "<cmd>set wh=999<cr><cmd>set wiw=999<cr>", desc = "Maximize window" },
+    ["="] = { "<cmd>set wh=10<cr><cmd>set wiw=10<cr><cmd>wincmd =<cr>", desc = "Equalize window" },
 
     -- which-key groups
     ["<leader>x"] = { name = " Trouble" },
@@ -39,8 +41,6 @@ return {
     ["<leader>G"] = { name = " Rsync" },
     ["<leader>v"] = { name = " Virtualenv" },
     ["<leader>D"] = { name = " Dadbod" },
-
-    -- specific keys
   },
   t = {
     -- setting a mapping to false will disable it
