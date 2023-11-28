@@ -17,7 +17,6 @@ return {
 
     -- Alt commands
     ["<M-e>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
-    ["<M-f>"] = { "<cmd>ZenMode<cr>", desc = "Zen mode" },
     ["<M-o>"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer" },
     ["<M-g>"] = { "<cmd>ARsyncUpDelete<cr>", desc = "Rsync up" },
     ["<M-G>"] = { "<cmd>ARsyncDown<cr>", desc = "Rsync down" },
@@ -35,6 +34,16 @@ return {
     ["<S-tab>"] = { "<cmd>wincmd W<cr>", desc = "Prev window" },
     ["+"] = { "<cmd>set wh=999<cr><cmd>set wiw=999<cr>", desc = "Maximize window" },
     ["="] = { "<cmd>set wh=10<cr><cmd>set wiw=10<cr><cmd>wincmd =<cr>", desc = "Equalize window" },
+
+    -- Zenmode
+    ["<M-F>"] = { -- 0.85 ( default )
+      "<cmd>ZenMode<cr>",
+      desc = "Zen mode",
+    },
+    ["<M-f>"] = { -- 80 columns
+      function() require("zen-mode").toggle { window = { width = 80 } } end,
+      desc = "Zenmode",
+    },
 
     -- which-key groups
     ["<leader>x"] = { name = " Trouble" },
