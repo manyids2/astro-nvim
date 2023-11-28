@@ -28,8 +28,6 @@ return {
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
     ["<C-q>"] = { "<C-w>q", desc = "Close window" },
     ["<leader>c"] = false,
-    ["<leader>j"] = { "`<", desc = "Jump to start of selection" },
-    ["<leader>k"] = { "`>", desc = "Jump to end of selection" },
 
     -- Split management
     ["<tab>"] = { "<cmd>wincmd w<cr>", desc = "Next window" },
