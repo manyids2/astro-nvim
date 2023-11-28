@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "seoulbones",
+  colorscheme = "forestbones",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -69,7 +69,7 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    vim.cmd[[set background=dark]]
+    vim.cmd[[set background=light]]
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

@@ -27,6 +27,7 @@ return {
     ["<M-r>"] = { "<cmd>source .git/.nvim.lua<cr>", desc = "Load local nvim config" },
     ["<C-e>"] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
     ["<C-z>"] = { "<cmd>bd<cr>", desc = "Delete buffer" },
+    ["<C-q>"] = { "<C-w>q", desc = "Close window" },
     ["<leader>c"] = false,
 
     -- Split management
@@ -45,5 +46,12 @@ return {
   t = {
     -- setting a mapping to false will disable it
     ["<esc>"] = false,
+  },
+  v = {
+    -- format with gq
+    ["gq"] = {
+      "<cmd>set formatexpr=indent<cr>" .. "gq" .. "<cmd>set formatexpr=v: lua.vim.lsp.formatexpr( )<cr>",
+      desc = "Format ( word wrap )",
+    },
   },
 }
