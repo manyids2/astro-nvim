@@ -45,12 +45,16 @@ return {
       desc = "Zenmode",
     },
 
+    -- Treesitter playground
+    ["<leader>TP"] = { "<cmd>TSPlaygroundToggle<cr>", desc = " Treesitter playground" },
+
     -- which-key groups
     ["<leader>x"] = { name = " Trouble" },
     ["<leader>r"] = { name = " Neotest" },
     ["<leader>G"] = { name = " Rsync" },
     ["<leader>v"] = { name = " Virtualenv" },
     ["<leader>D"] = { name = " Dadbod" },
+    ["<leader>V"] = { name = "⧉ Venn" },
   },
   t = {
     -- setting a mapping to false will disable it
